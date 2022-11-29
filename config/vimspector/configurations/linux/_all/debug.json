@@ -1,0 +1,34 @@
+{
+    "configurations": {
+        "Cpp/GDB Launch": {
+            "adapter": "vscode-cpptools",
+            "filetypes": [ "cpp", "c", "objc", "rust" ],
+            "configuration": {
+                "type": "cppdbg",
+                "request": "launch",
+                "program": "${workspaceFolder}/a.out",
+                "args": [],
+                "cwd": "${fileDirname}",
+                "environment": [],
+                "externalConsole": true,
+                "MIMode": "gdb",
+                "setupCommands": [
+                    {
+                        "description": "Enable pretty-printing for gdb",
+                        "text": "-enable-pretty-printing",
+                        "ignoreFailures": true
+                    }
+                ]
+            }
+        }
+    //    "Attach": {
+    //        "adapter": "vscode-cpptools",
+    //        "filetypes": [ "cpp", "c", "objc", "rust" ],
+    //        "configuration": {
+    //            "request": "attach",
+    //            "program": "<path to binary>",
+    //            "MIMode": "<lldb or gdb>"
+    //        }
+    //    }
+    }
+}
